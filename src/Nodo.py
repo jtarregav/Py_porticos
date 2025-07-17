@@ -1,5 +1,6 @@
 class Nodo:
-    def __init__(self, x, y, z):
+    def __init__(self, id_nodo, x, y, z):
+        self.id = id_nodo
         self.x = x
         self.y = y
         self.z = z
@@ -17,4 +18,7 @@ class Nodo:
         
 
     def __repr__(self):
-        return f"Nodo(x={self.x}, y={self.y}, z={self.z})"
+        return f"Nodo(id={self.id}, x={self.x}, y={self.y}, z={self.z})"
+
+    def __str__(self):
+        return f"N{self.id}({self.x},{self.y},{self.z})"
